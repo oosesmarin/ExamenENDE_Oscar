@@ -6,7 +6,14 @@ public class Libro {
     private String isbn;
     private boolean prestado;
     
-	public String getTitulo() {
+	public Libro(String titulo, String autor, String isbn, boolean prestado) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.isbn = isbn;
+		this.prestado = prestado;
+	}
+  
+  public String getTitulo() {
 		return titulo;
 	}
 	public void setTitulo(String titulo) {
@@ -35,4 +42,5 @@ public class Libro {
 	public String toString() {
 		return "Libro [titulo=" + titulo + ", autor=" + autor + ", isbn=" + isbn + ", prestado=" + prestado + "]";
 	}
+    
 }
